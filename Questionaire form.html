@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Grouping Form Controls in HTML</title>
+<body background="RSbg.png" width="100%" height="100%" alink="black" vlink="black"
+link="black">
+</head>
+<body style="background-color:wheat;">
+ <h4> <fieldset><legend align="center">General Information</legend>   <form style="background-color:wheat;">
+        <fieldset>
+            <legend>Name</legend>            
+            <label>Firstname: <input type="text" name="firstname"></label>            
+            <label>Middlename: <input type="text" name="middlename"></label>
+            <label>Lastname: <input type="text" name="lastname"></label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>            
+            <label><input type="radio" name="gender" value="male"> Male</label>            
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="others"> Others</label>            
+
+        </fieldset>
+        <fieldset>
+            <legend>Stream</legend>            
+            <label><input type="radio" name="stream" value="SCIENCE"> SCIENCE </label>            
+            <label><input type="radio" name="stream" value="COMMERCE"> COMMERCE</label>
+            <label><input type="radio" name="stream" value="HUMANITIES"> HUMANITIES </label>            
+            
+        </fieldset>
+        <fieldset>
+        	<legend>which exam do you want to take</legend>            
+            <label><input type="checkbox" name="hobbies" value="IIT JEE"> IIT JEE</label>
+            <label><input type="checkbox" name="hobbies" value="NEET"> NEET</label>
+            <label><input type="checkbox" name="hobbies" value="UPSC"> UPSC</label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email Address: <input type="email" name="email"></label>
+            <label>Phone Number: <input type="text" name="phone"></label>
+        </fieldset>
+    <fieldset>
+            <legend>City Details</legend>
+    <label for="city">City:</label>
+    <select name="city" id="city">
+        <option value="new delhi">New Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="amritsar">Amritsar</option>
+        <option value="Kota">kota</option>
+        <option value="Chennai">Chennai</option> 
+   </select></fieldset>
+<fieldset>
+            <legend>Permanent Address</legend>
+<label for="address">Address:</label>
+    <textarea rows="3" cols="30" name="address" id="address"></textarea></fieldset>
+<fieldset>
+            <legend>Browse File</legend><label for="file-select">Upload:</label>
+    <input type="file" name="upload" id="file-select">
+</fieldset>
+<fieldset>
+            <legend>Login</legend>
+<label for="user-pwd">Password:</label>
+    <input type="password" name="user-password" id="user-pwd">
+</fieldset>
+<label>Pickup Date/Time
+<input type="datetime-local" name="pickup_time" required>
+</label><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+</h4>
+</body>
+</html>
